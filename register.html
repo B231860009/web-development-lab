@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бүртгэлийн форм</title>
+</head>
+<body>
+
+    <header>
+        <h1>Хэрэглэгчийн бүртгэл</h1>
+        <p>Доорх формыг бөглөж бүртгүүлнэ үү.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <h2>Хувийн мэдээлэл</h2>
+
+            <label for="fullname">Овог, нэр:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Овог нэрээ бичнэ үү"
+                pattern="[А-Яа-яӨөҮүЁёA-Za-z ]{2,50}"
+                required
+            >
+            <br><br>
+
+            <label for="email">Имэйл хаяг:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+            >
+            <br><br>
+
+            <label for="password">Нууц үг:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                required
+            >
+            <br><br>
+
+            <label for="birthdate">Төрсөн огноо:</label>
+            <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                required
+            >
+            <br><br>
+
+            <h2>Хүйс</h2>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Эрэгтэй"
+                required
+            >
+            <label for="male">Эрэгтэй</label>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="Эмэгтэй"
+            >
+            <label for="female">Эмэгтэй</label>
+
+            <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="Бусад"
+            >
+            <label for="other">Бусад</label>
+
+            <br><br>
+
+            <h2>Сонирхол</h2>
+
+            <input
+                type="checkbox"
+                id="programming"
+                name="interests"
+                value="Программчлал"
+            >
+            <label for="programming">Программчлал</label>
+            <br>
+
+            <input
+                type="checkbox"
+                id="design"
+                name="interests"
+                value="Дизайн"
+            >
+            <label for="design">Дизайн</label>
+            <br>
+
+            <input
+                type="checkbox"
+                id="cybersecurity"
+                name="interests"
+                value="Кибер аюулгүй байдал"
+            >
+            <label for="cybersecurity">Кибер аюулгүй байдал</label>
+            <br><br>
+
+            <label for="education">Боловсрол:</label>
+            <select id="education" name="education" required>
+                <option value="">Сонгоно уу</option>
+                <option value="student">Оюутан</option>
+                <option value="highschool">Ахлах анги</option>
+                <option value="graduate">Төгссөн</option>
+                <option value="other">Бусад</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Бүртгүүлэх</button>
+            <button type="reset">Цэвэрлэх</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Миний бүртгэлийн хуудас</p>
+    </footer>
+
+</body>
+</html>
