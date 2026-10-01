@@ -1,0 +1,130 @@
+
+/* Ерөнхий загвар */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Гарчиг */
+.header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Формын үндсэн хэсэг */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+/* Талбарууд */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+/* Талбар сонгосон үед */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #bfdbfe;
+}
+
+/* Товчнууд */
+.btn {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Position: relative / absolute жишээ */
+.badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -35px;
+    background-color: #ef4444;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* Хүснэгт */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #dbeafe;
+}
+
+/* Доод хэсэг */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
